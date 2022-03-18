@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html,body{
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+}
