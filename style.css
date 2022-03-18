@@ -19,6 +19,49 @@ a{
 html,body{
     width: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     color: black;
     scroll-behavior: smooth;
+    background-color:rgba(0, 139, 139, 0.2);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+.header{
+    display: grid;
+    padding: 20px;
+    grid-area: header;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: minmax(auto, 900px) minmax(auto, 500px); */
+    align-items: center;
+    background-color:rgba(0, 128, 128, 0.61);
+}
+.header-menu{
+    grid-column: 1/2;
+}
+.header-list{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+.header-list li{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-list li:hover{
+    transform: scale(0.97);
+    opacity: 0.6;
+    transition: 0.5s;
+}
+/*----------------------------*/
+.footer{
+    background-color:rgba(0, 128, 128, 0.61);
 }
