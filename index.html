@@ -79,6 +79,28 @@
                         </ul>
                     </div>
                 </section>
+                <section class="code">
+                    <h2 class="code-title">Code</h2>
+                    <p class="code-text">Task: <a href="https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript">codewars</a></p>
+                    <div class="code-block">
+                        <pre>
+                            <code>
+                                function race(v1, v2, g) {
+                                    if (v2 > v1){
+                                     let catchTime = g / (v2-v1) *3600;
+                                     let hours = Math.floor(catchTime / 3600);
+                                     let minutes = Math.floor((catchTime%3600) /60);
+                                     let seconds = Math.floor(catchTime%60);
+                                     let arr = [hours, minutes, seconds];
+                                     return arr;
+                                   } else {
+                                     return null;
+                                   }
+                                 }
+                            </code>
+                        </pre>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="footer">
