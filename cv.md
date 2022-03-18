@@ -32,3 +32,16 @@ function race(v1, v2, g) {
   }
 }
 ```
+## Experience: 
+* Lerning DOM: [slider](https://takeamoment.github.io/slider/);
+* Lerning Math.random(): [random-quotes](https://takeamoment.github.io/generate_quotes);
+* Lerning data objet, setInterval, clearInterval: [clock](https://takeamoment.github.io/my_clock/index.html);
+* Creating a game: [memory-game](https://takeamoment.github.io/memory-game/memory-game/).
+## Education
+I finished Vitebsk State Order of Peoples' Medical University in 2018. 
+Courses:
+* JavaScript for beginners ([Stepic](https://welcome.stepik.org/ru));
+* Web-developing for beginners ([Stepic](https://welcome.stepik.org/ru));
+* CS50 ;
+* JavaScript ([javascript.ru](https://learn.javascript.ru/));
+* RS School stage 0 ([rs school](https://rs.school/));
