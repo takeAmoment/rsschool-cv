@@ -7,7 +7,6 @@
 ## About me
 I'm 25 years old. I realy want to became a good javascript developer. I like creating a new interesting and logical things. I'm patient person and I adore self-develepment. I'm interested in solving difficult tasks and working in team.
 ## Skills
-
 * HTML5 
 * CSS3
 * JS
