@@ -45,3 +45,5 @@ Courses:
 * CS50 ;
 * JavaScript ([javascript.ru](https://learn.javascript.ru/));
 * RS School stage 0 ([rs school](https://rs.school/));
+## English
+__My English level__: A2 / B1 (Pre-Intermediate / Intermediate).
