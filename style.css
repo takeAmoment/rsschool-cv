@@ -120,11 +120,11 @@ h2{
     list-style: square;
     font-size: 26px;
 }
-.courses-link{
+a{
     font-weight: bold;
 }
 
-.courses-link:hover{
+a:hover{
     color: white;
     transition: 0.3s;
     transform: rotate(90deg);
@@ -134,6 +134,11 @@ h2{
     background-color: var(--bg-color1);
     margin-left: 15px;
 
+}
+pre{
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 26px;
 }
 .english{
     background-color: var(--bg-color2);
