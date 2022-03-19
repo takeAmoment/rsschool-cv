@@ -26,6 +26,53 @@
         </header>
 
         <main class="main">
+           
+            <div class="main-body">
+                <h1 class="name-title">Aleksandra Pekhota</h1>
+                <section class="about">
+                    <h2 id="about-title">About me</h2>
+                    <p class="about-text">I'm 25 years old. I realy want to became a good javascript developer. I like creating a new interesting and logical things. I'm patient person and I adore self-develepment. I'm interested in solving difficult tasks and working in team.</p>
+                </section>
+                <section class="education">
+                    <h2 id="education-title">Education</h2>
+                    <p class="education-text">I finished Vitebsk State Order of Peoples' Medical University in 2018.</p>
+                    <div class="courses">Courses
+                        <ul class="courses-list">
+                            <li>JavaScript for beginners<a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a></li>
+                            <li>Web-developing for beginners<a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a></li>
+                            <li>CS50<a href="" class="courses-link"></a></li>
+                            <li>JavaScript<a href="https://learn.javascript.ru/" class="courses-link">javascript.ru</a></li>
+                            <li>RS School stage 0<a href="https://rs.school/" class="courses-link">rs school</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="code">
+                    <h2 id="code-title">Code</h2>
+                    <p class="code-text">Task: <a href="https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript">codewars</a></p>
+                    <div class="code-block">
+                        <pre>
+                            <code>
+function race(v1, v2, g) {
+    if (v2 > v1){
+        let catchTime = g / (v2-v1) *3600;
+        let hours = Math.floor(catchTime / 3600);
+        let minutes = Math.floor((catchTime%3600) /60);
+        let seconds = Math.floor(catchTime%60);
+        let arr = [hours, minutes, seconds];
+        return arr;
+    } else {
+        return null;
+    }
+    }
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section class="english">
+                    <h2 id="english-title">English</h2>
+                    <p class="english-text">My English level: A2 / B1 (Pre-Intermediate / Intermediate).</p>
+                </section>
+            </div>
             <aside class="aside">
                 <div class="avatar-block">
                     <img src="assets/image/photo.jpg" alt="my_photo" class="avatar">
@@ -61,52 +108,6 @@
                     </ul>
                 </section>
             </aside>
-            <div class="main-body">
-                <h1 class="name-title">Aleksandra Pekhota</h1>
-                <section class="about">
-                    <h2 id="about-title">About me</h2>
-                    <p class="about-text">I'm 25 years old. I realy want to became a good javascript developer. I like creating a new interesting and logical things. I'm patient person and I adore self-develepment. I'm interested in solving difficult tasks and working in team.</p>
-                </section>
-                <section class="education">
-                    <h2 id="education-title">Education</h2>
-                    <p class="education-text">I finished Vitebsk State Order of Peoples' Medical University in 2018.</p>
-                    <div class="courses">Courses
-                        <ul class="courses-list">
-                            <li>JavaScript for beginners<a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a></li>
-                            <li>Web-developing for beginners<a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a></li>
-                            <li>CS50<a href="" class="courses-link"></a></li>
-                            <li>JavaScript<a href="https://learn.javascript.ru/" class="courses-link">javascript.ru</a></li>
-                            <li>RS School stage 0<a href="https://rs.school/" class="courses-link">rs school</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="code">
-                    <h2 id="code-title">Code</h2>
-                    <p class="code-text">Task: <a href="https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript">codewars</a></p>
-                    <div class="code-block">
-                        <pre>
-                            <code>
-                                function race(v1, v2, g) {
-                                    if (v2 > v1){
-                                     let catchTime = g / (v2-v1) *3600;
-                                     let hours = Math.floor(catchTime / 3600);
-                                     let minutes = Math.floor((catchTime%3600) /60);
-                                     let seconds = Math.floor(catchTime%60);
-                                     let arr = [hours, minutes, seconds];
-                                     return arr;
-                                   } else {
-                                     return null;
-                                   }
-                                 }
-                            </code>
-                        </pre>
-                    </div>
-                </section>
-                <section class="english">
-                    <h2 id="english-title">English</h2>
-                    <p class="english-text">My English level: A2 / B1 (Pre-Intermediate / Intermediate).</p>
-                </section>
-            </div>
         </main>
         <footer class="footer">
             <div class="date">

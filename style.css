@@ -17,7 +17,8 @@ a{
     color: inherit;
 }
 html,body{
-    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -26,6 +27,7 @@ html,body{
     background-color:rgba(0, 139, 139, 0.2);
 }
 .wrapper{
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
@@ -39,12 +41,12 @@ html,body{
     padding: 20px;
     grid-area: header;
     grid-template-rows: 1fr;
-    /* grid-template-columns: minmax(auto, 900px) minmax(auto, 500px); */
+    grid-template-columns: 1fr minmax(auto, 1000px) minmax(auto, 400px) 1fr;
     align-items: center;
     background-color:rgba(0, 128, 128, 0.61);
 }
 .header-menu{
-    grid-column: 1/2;
+    grid-column: 2/2;
 }
 .header-list{
     display: grid;
@@ -52,16 +54,49 @@ html,body{
     justify-items: center;
 }
 .header-list li{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
 }
 
-.header-list li:hover{
+.header-link:hover{
     transform: scale(0.97);
-    opacity: 0.6;
-    transition: 0.5s;
+    color: whitesmoke;
+    transition: 0.3s;
 }
 /*----------------------------*/
+.main{
+    display: grid;
+    grid-area: main;
+    margin: 50px 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(auto, 1100px) minmax(auto, 300px) 1fr;
+}
+.aside{
+    grid-column: 3/3;
+    justify-self: center;
+
+    
+}
+.main-body{
+    grid-column: 2/2;
+    justify-self: center;
+}
+.name-title{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.avatar-block{
+    position: relative;
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px darkcyan;
+}
+/*-----------------------------*/
 .footer{
+    grid-area: footer;
     background-color:rgba(0, 128, 128, 0.61);
 }
