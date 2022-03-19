@@ -16,6 +16,11 @@ a{
     text-decoration: none;
     color: inherit;
 }
+:root{
+    --main-color: rgb(232, 243, 243);
+    --bg-color1: rgb(221, 235, 247);
+    --bg-color2:rgba(0, 128, 128, 0.418);
+}
 html,body{
     max-width: 100%;
     min-height: 100%;
@@ -24,7 +29,7 @@ html,body{
     font-weight: 400;
     color: black;
     scroll-behavior: smooth;
-    background-color:rgba(0, 139, 139, 0.2);
+    background-color: var(--main-color);
 }
 .wrapper{
     height: 100%;
@@ -80,10 +85,59 @@ html,body{
 .main-body{
     grid-column: 2/2;
     justify-self: center;
+    padding-right: 30px;
 }
 .name-title{
     font-size: 48px;
     margin-bottom: 30px;
+}
+section{
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 38px;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+.about{
+    background-color: var(--bg-color1);
+    margin-left: 15px;
+    
+}
+.education{
+    background-color:var(--bg-color2);
+    margin-right: 15px;
+    
+}
+.education-text{
+    margin-bottom: 15px;
+}
+.courses-list li{
+    margin-left: 30px;
+    list-style: square;
+    font-size: 26px;
+}
+.courses-link{
+    font-weight: bold;
+}
+
+.courses-link:hover{
+    color: white;
+    transition: 0.3s;
+    transform: rotate(90deg);
+   border-bottom: 2px solid white;
+}
+.code{
+    background-color: var(--bg-color1);
+    margin-left: 15px;
+
+}
+.english{
+    background-color: var(--bg-color2);
+    margin-right: 15px;
 }
 .avatar-block{
     position: relative;
@@ -93,7 +147,7 @@ html,body{
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 5px darkcyan;
+    box-shadow: 0px 0px 15px 5px rgb(252, 253, 253);
 }
 /*-----------------------------*/
 .footer{
