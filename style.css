@@ -48,7 +48,7 @@ html,body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr minmax(auto, 900px) minmax(auto, 500px) 1fr;
     align-items: center;
-    background-color:rgba(0, 128, 128, 0.61);
+    background-color:var(--bg-color2);
 }
 .header-menu{
     grid-column: 2/2;
@@ -222,6 +222,52 @@ pre{
     border-radius: 10px;
     box-shadow: 0px 0px 15px 5px rgb(252, 253, 253);
 }
+.experience-list li{
+    list-style: circle;
+    margin-left: 30px;
+}
+.english-text span{
+    font-weight: bold;
+}
+.contact-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+/* .phone-number,
+.e-mail,
+.discord-name,
+.github-name{
+    position: relative;
+    margin-left: 70px;
+} */
+
+.phone-number::before,
+.e-mail::before,
+.discord-name::before,
+.github-name::before{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 15px;
+    background-position: 0 0;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+.phone-number::before{
+    content: url(assets/icon/phone.png);
+}
+.e-mail::before{
+    content: url(assets/icon/mail.png);
+}
+.discord-name::before{
+    content: url(assets/icon/discord.png);
+}
+.github-name::before{
+    content: url(assets/icon/github.png);
+}
+
 /*-----------------------------*/
 .footer{
     grid-area: footer;
