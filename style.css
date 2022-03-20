@@ -229,18 +229,42 @@ pre{
 .english-text span{
     font-weight: bold;
 }
+.level-block{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.a2-block,
+.b1-block{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.a2-block{
+    margin-top: 8px ;
+    background-color: rgb(199, 65, 65);
+    transform: rotate(45deg);
+}
+.a2-block:hover{
+    margin-top: 30px;
+    transform: translateX(40px) rotate(90deg);
+    transition: all 0.3s;
+}
+.b1-block{
+    justify-self: start;
+    margin-top: 30px;
+    background-color: rgb(60, 211, 98);
+}
 .contact-item{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 }
-/* .phone-number,
-.e-mail,
-.discord-name,
-.github-name{
-    position: relative;
-    margin-left: 70px;
-} */
 
 .phone-number::before,
 .e-mail::before,
