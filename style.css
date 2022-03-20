@@ -3,7 +3,7 @@
 *::before{
     margin: 0;
     padding: 0;
-    bottom: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -22,8 +22,7 @@ a{
     --bg-color2:rgba(0, 128, 128, 0.418);
 }
 html,body{
-    max-width: 100%;
-    min-height: 100%;
+    height: 100%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -32,15 +31,18 @@ html,body{
     background-color: var(--main-color);
 }
 .wrapper{
-    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(120px, auto) 1fr minmax(100px, auto);
+    grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
     grid-template-areas: 
         'header'
         'main'
         'footer';
 }
+/*--------------------------------*/
 .header{
     display: grid;
     padding: 20px;
@@ -51,7 +53,7 @@ html,body{
     background-color:var(--bg-color2);
 }
 .header-menu{
-    grid-column: 2/2;
+    grid-column: 2/4;
 }
 .header-list{
     display: grid;
@@ -70,6 +72,7 @@ html,body{
 }
 /*----------------------------*/
 .main{
+    /* width: 100%; */
     display: grid;
     grid-area: main;
     margin: 50px 20px;
@@ -78,13 +81,15 @@ html,body{
 }
 
 .main-body{
-    grid-column: 2/2;
-    justify-self: center;
-    padding-right: 30px;
+    grid-column: 2/3;
+    justify-items: center;
+    /* padding: 0px 30px; */
+    margin-right: 20px;
 }
 .name-title{
     font-size: 48px;
     margin-bottom: 30px;
+    padding-left: 20px;
 }
 section{
     border-radius: 20px;
@@ -154,7 +159,7 @@ a:hover{
     width: 150px;
     height: 20px;
     background-color: grey;
-    box-shadow: inset 0 -7px 20px -10px grey;
+    box-shadow: 0px 0px 2px 2px grey;
     border-radius: 10px;
 }
 .grade{
@@ -166,7 +171,7 @@ a:hover{
 }
 .html{
     width: 90%;
-    background-color: darkgreen;
+    background-color: forestgreen;
 }
 .scc{
     width: 80%;
@@ -178,7 +183,7 @@ a:hover{
 }
 .vs{
     width: 90%;
-    background-color: darkgreen;
+    background-color: forestgreen;
 }
 .ph{
     width: 75%;
@@ -198,13 +203,14 @@ a:hover{
 pre{
     color: black;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 18px;
+    padding: 15px;
 }
 
 .aside{
-    grid-column: 3/3;
+    grid-column: 3/4;
     justify-self: center;
-    padding: 40px;
+    padding: 20px 40px;
     margin: 30px 0px;
     background-color: whitesmoke;
 
@@ -218,8 +224,9 @@ pre{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 5px rgb(252, 253, 253);
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow:  7px 5px 15px grey;
 }
 .experience-list li{
     list-style: circle;
