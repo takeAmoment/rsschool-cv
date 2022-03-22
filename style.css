@@ -279,8 +279,21 @@ a{
 .code{
     background-color: var(--bg-color2);
     /* margin-right: 15px; */
-   
 
+}
+.arrow{
+    display: none;
+    color: white;
+    width: 0;
+    height: 0;
+    transition: transform 0.3s;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid white;
+    margin:  0 0 0 5px;
+}
+.arrow.active{
+    transform: rotate(-90deg);
 }
 pre{
     color: black;
