@@ -5,6 +5,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 ol,
@@ -53,7 +54,7 @@ html,body{
     background-color:var(--bg-color2);
 }
 .header-menu{
-    grid-column: 2/4;
+    grid-column: 2/3;
 }
 .header-list{
     display: grid;
@@ -124,7 +125,8 @@ a{
     font-weight: bold;
 }
 
-a:hover{
+.courses-link:hover,
+.codewars-link:hover{
     color: white;
     transition: 0.3s;
     border-bottom: 2px solid white;
@@ -204,13 +206,13 @@ pre{
     color: black;
     font-weight: bold;
     font-size: 18px;
-    padding: 15px;
+    padding:  0 15px;
 }
 
 .aside{
     grid-column: 3/4;
     justify-self: center;
-    padding: 20px 40px;
+    padding: 40px;
     margin: 30px 0px;
     background-color: whitesmoke;
 
@@ -218,7 +220,6 @@ pre{
 }
 .avatar-block{
     position: relative;
-    padding: 40px;
 }
 .avatar{
     width: 100%;
@@ -231,6 +232,11 @@ pre{
 .experience-list li{
     list-style: circle;
     margin-left: 30px;
+}
+.experience-link:hover{
+    transform: scale(0.97);
+    color: var(--bg-color2);
+    transition: 0.3s;
 }
 .english-text span{
     font-weight: bold;
@@ -326,6 +332,11 @@ pre{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.github:hover{
+    color: white;
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+}
 .rss{
     grid-column: 3/3;
     width: 150px;
@@ -334,4 +345,8 @@ pre{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.rss:hover{
+    transform: scale(0.95);
+    border-bottom: 1px solid white;
 }
