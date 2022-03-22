@@ -43,6 +43,11 @@ html,body{
         'main'
         'footer';
 }
+@media(max-width: 670px){
+    body{
+        font-size: 18px;
+    }
+}
 /*--------------------------------*/
 .header{
     display: grid;
@@ -137,7 +142,7 @@ a{
 }
 .skills-body{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
     row-gap: 10px;
 }
@@ -208,26 +213,50 @@ pre{
     font-size: 18px;
     padding:  0 15px;
 }
-
+@media(max-width: 900px){
+    pre{
+        font-size: 14px;
+    }
+}
+@media(max-width: 768px){
+    pre{
+        display: none;
+    }
+}
 .aside{
     grid-column: 3/4;
     justify-self: center;
-    padding: 40px;
+    padding: 40px 20px;
     margin: 30px 0px;
     background-color: whitesmoke;
-
     
 }
+@media(max-width: 750px){
+    .aside{
+        padding: 40px 10px;
+    }
+}
 .avatar-block{
-    position: relative;
+    /* position: relative; */
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    background-image: url(assets/image/photo.jpg);
+    background-size: cover;
 }
 .avatar{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-bottom-left-radius: 40px;
     border-top-right-radius: 40px;
     box-shadow:  7px 5px 15px grey;
+}
+@media(max-width: 600px){
+    .avatar-block{
+        width: 100px;
+        height: 150px;
+    }
 }
 .experience-list li{
     list-style: circle;
@@ -247,6 +276,11 @@ pre{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
+@media(max-width: 768px){
+    .level-block{
+        display: none;
+    }
+}
 .a2-block,
 .b1-block{
     width: 100px;
@@ -256,6 +290,13 @@ pre{
     font-weight: bold;
     align-items: center;
     justify-content: center;
+}
+@media(max-width: 900px){
+    .a2-block,
+    .b1-block{
+        width: 50px;
+        height: 50px;
+    }
 }
 .a2-block{
     margin-top: 8px ;
@@ -274,10 +315,31 @@ pre{
 }
 .contact-item{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(auto, 50px) minmax(auto, 200px );
     grid-template-rows: 1fr;
+    justify-items: start;
+    margin-bottom: 10px;
 }
-
+.icon{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+.phone-icon{
+    background-image: url(assets/icon/phone.png);
+}
+.mail-icon{
+    background-image: url(assets/icon/mail.png);
+}
+.discord-icon{
+    background-image: url(assets/icon/discord.png);
+}
+.github-icon{
+    background-image: url(assets/icon/github.png);
+}
+/* 
 .phone-number::before,
 .e-mail::before,
 .discord-name::before,
@@ -302,7 +364,7 @@ pre{
 }
 .github-name::before{
     content: url(assets/icon/github.png);
-}
+} */
 
 /*-----------------------------*/
 .footer{
