@@ -282,6 +282,7 @@ a{
 
 }
 .arrow{
+    
     display: none;
     color: white;
     width: 0;
@@ -292,9 +293,18 @@ a{
     border-top: 30px solid white;
     margin:  0 0 0 5px;
 }
-.arrow.active{
-    transform: rotate(-90deg);
+@media(max-width: 768px){
+    .arrow{
+        display: block;
+        margin-top: 15px;
+        cursor: pointer;
+        transform: rotate(-90deg);
+    }
+    .arrow.active{
+        transform: rotate(0deg);
+    }
 }
+
 pre{
     color: black;
     font-weight: bold;
@@ -310,6 +320,16 @@ pre{
     pre{
         display: none;
     }
+}
+.example.active{
+    background-color: rgba(0, 0, 0, 0.712);
+    color: #fff;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 500px;
+    font-size: 16px;
+    
 }
 .aside{
     grid-column: 3/4;
@@ -483,14 +503,14 @@ pre{
     background-repeat: no-repeat;
 }
 .github:hover{
-    color: white;
-    transition: 0.3s;
-    border-bottom: 2px solid white;
+    transform: scale(0.95);
+    border-bottom: 1px solid white;
+    transition: all 0.3s;
 }
 .rss{
     grid-column: 3/3;
     width: 150px;
-    height: 50px;
+    height: 60px;
     background-image: url(assets/icon/rs_school.svg);
     background-position: center;
     background-size: contain;
@@ -499,4 +519,5 @@ pre{
 .rss:hover{
     transform: scale(0.95);
     border-bottom: 1px solid white;
+    transition: all 0.3s;
 }
