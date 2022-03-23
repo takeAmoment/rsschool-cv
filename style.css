@@ -81,7 +81,7 @@ html,body{
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 150px 30px 30px 50px;
-        
+        z-index: 2;
         transition: all 0.3s;
     }
     .header-menu.active{
@@ -98,6 +98,10 @@ html,body{
         font-size: 46px;
         color: white;
     }
+    .header-link:hover{
+        transform: scale(0.97);
+        opacity: 0.7;
+    }
 }
 .header-list{
     display: grid;
@@ -113,6 +117,7 @@ html,body{
 .header-list li{
     font-size: 28px;
     font-weight: bold;
+
 }
 
 .header-link:hover{
