@@ -304,10 +304,12 @@ a{
         margin-top: 15px;
         cursor: pointer;
         transform: rotate(-90deg);
+        transition: all 0.3s;
     }
-    .arrow.active{
-        transform: rotate(0deg);
-    }
+    
+}
+.arrow.active{
+    transform: rotate(0deg);
 }
 
 pre{
@@ -322,11 +324,13 @@ pre{
     }
 }
 @media(max-width: 768px){
-    pre{
+    .example{
         display: none;
+        transition: 0.3s;
     }
 }
 .example.active{
+    display: block;
     background-color: rgba(0, 0, 0, 0.712);
     color: #fff;
     margin-left: 5px;

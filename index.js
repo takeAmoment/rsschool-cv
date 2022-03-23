@@ -18,3 +18,9 @@ for(let link of headerLinks){
 }
 
 /*------------------------*/
+
+arrow.addEventListener('click', function(){
+    console.log(exampleOfCode);
+    arrow.classList.toggle('active');
+    exampleOfCode.classList.toggle('active');
+})
