@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header-menu">
+                <ul class="header-list">
+                    <li><a href="#about-title" class="header-link">About me</a></li>
+                    <li><a href="#education-title" class="header-link">Education</a></li>
+                    <li><a href="#experienxe-title" class="header-link">Experience</a></li>
+                    <li><a href="#english-title" class="header-link">English</a></li>
+                    <li><a href="#code-title" class="header-link">Code</a></li>
+                    <li><a href="#contacts-title" class="header-link">Contacts</a></li>
+                    <li><a href="#skills-title" class="header-link">Skills</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+           
+            <div class="main-body">
+                <h1 class="name-title">Aleksandra Pekhota</h1>
+                <section class="about">
+                    <h2 id="about-title">About me</h2>
+                    <div class="about-content">
+                        <p class="about-text">
+                            I'm 25 years old. I realy want to became a good javascript developer.
+                            I like creating a new interesting and logical things. I'm patient person and I adore self-develepment.
+                            I'm interested in solving difficult tasks and working in team.</p>
+                    </div>
+                    
+                </section>
+                <section class="education">
+                    <h2 id="education-title">Education</h2>
+                    <div class="education-content">
+                        <p class="education-text">I finished Vitebsk State Order of Peoples' Medical University in 2018.</p>
+                        <div class="courses">Courses:
+                            <ul class="courses-list">
+                                <li>JavaScript for beginners <a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a>;</li>
+                                <li>Web-developing for beginners <a href="https://welcome.stepik.org/ru" class="courses-link">Stepic</a>;</li>
+                                <li>CS50 <a href="" class="courses-link"></a>;</li>
+                                <li>JavaScript <a href="https://learn.javascript.ru/" class="courses-link">javascript.ru</a>;</li>
+                                <li>RS School stage 0 <a href="https://rs.school/" class="courses-link"> rs school</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="skills">
+                    <h2 id="skills-title">Skills</h2>
+                    <div class="skills-body">
+                        <div class="html-block  container">
+                            <img src="assets/icon/html.png" alt="html">
+                            <div class="subsc">HTML5</div>
+                            <div class="progress-bar">
+                                <span class="grade html"></span>
+                            </div>
+                        </div>
+                        <div class="css-block container">
+                            <img src="assets/icon/css.png" alt="css">
+                            <div class="subsc">CSS3</div>
+                            <div class="progress-bar">
+                                <span class="grade scc"></span>
+                            </div>
+                        </div>
+                        <div class="js-block container">
+                            <img src="assets/icon/javascript.png" alt="js">
+                            <div class="subsc">JavaScript</div>
+                            <div class="progress-bar">
+                                <span class="grade js"></span>
+                            </div>
+                        </div>
+                        <div class="vs-block container">
+                            <img src="assets/icon/vs.png" alt="vs code">
+                            <div class="subsc">VS Code / Atom</div>
+                            <div class="progress-bar">
+                                <span class="grade vs"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="photoshop-block container">
+                            <img src="assets/icon/photoshop.png" alt="photoshop">
+                            <div class="subsc">Photoshop / Figma</div>
+                            <div class="progress-bar">
+                                <span class="grade ph"></span>
+                            </div>
+                        </div>
+                        <div class="git-block container">
+                            <img src="assets/icon/git.png" alt="git">
+                            <div class="subsc">Git</div>
+                            <div class="progress-bar">
+                                <span class="grade git"></span>
+                            </div>
+                        </div>
+                    </div>
+                        
+                   
+                </section>
+                <section class="code">
+                    <h2 id="code-title">Code</h2>
+                    <p class="code-text">Task: <a class="codewars-link" href="https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript">codewars</a></p>
+                    <div class="ar">
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="code-block">
+                        <pre class="example">
+                            
+function race(v1, v2, g) {
+    if (v2 > v1){
+        let catchTime = g / (v2-v1) *3600;
+        let hours = Math.floor(catchTime / 3600);
+        let minutes = Math.floor((catchTime%3600) /60);
+        let seconds = Math.floor(catchTime%60);
+        let arr = [hours, minutes, seconds];
+        return arr;
+    } else {
+        return null;
+    }
+}
+                            
+                        </pre>
+                    </div>
+                </section>
+                
+            </div>
+            <aside class="aside">
+                <div class="avatar-block">
+                    <!-- <img src="assets/image/photo.jpg" alt="my_photo" class="avatar"> -->
+                </div>
+                
+                <section class="experience">
+                    <h2 id="experience-title">Experience</h2>
+                    <ul class="experience-list">
+                        <li>Lerning DOM: <a class= "experience-link" href="https://takeamoment.github.io/slider/">slider;</a></li>
+                        <li>Lerning Math.random(): <a class= "experience-link" href="https://takeamoment.github.io/generate_quotes">random-quotes;</a></li>
+                        <li>Lerning data objet, setInterval, clearInterval: <a class= "experience-link" href="https://takeamoment.github.io/my_clock/index.html">clock;</a></li>
+                        <li>Creating a game: <a class= "experience-link" href="https://takeamoment.github.io/memory-game/memory-game/">memory-game.</a></li>
+                    </ul>
+                </section>
+                <section class="english">
+                    <h2 id="english-title">English</h2>
+                    <p class="english-text"><span>My English level:</span> A2 / B1 (Pre-Intermediate / Intermediate).</p>
+                    <div class="level-block">
+                        <div class="a2-block">A2</div>
+                        <div class="b1-block">B1</div>
+                    </div>
+                    
+                </section>
+                <section class="contacts">
+                    <h2 id="contacts-title">Contacts</h2>
+                    <div class="contacts-items">
+                        <div class="contact-item">
+                            <div class="phone-icon icon"></div>
+                            <p class="phone-number">+48 888 078 741</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="mail-icon icon"></div>
+                            <p class="e-mail">alekspekhota@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="discord-icon icon"></div>
+                            <p class="discord-name">@scubido#0714</p>
+                            
+                        </div>
+                        <div class="contact-item">
+                            <div class="github-icon icon"></div>
+                            <p class="github-name">
+                                takeAmoment
+                            </p>
+                        </div>
+                        
+                    </div>   
+                </section>
+            </aside>
+        </main>
+        <footer class="footer">
+            <div class="date">
+                <span>&#169; 2022</span>
+                <a class="github" href="https://github.com/takeAmoment"></a>
+            </div>
+            <a class="rss" href="https://rs.school/"></a>
+        </footer>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
